@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+    <form action="XuLyDangKy.php" name="formDangKy" method="post">
+        <div>
+            Tên đăng nhập:
+            <input name="tenDangNhap" />
+        </div>
+        <div>
+            Mật khẩu:
+            <input name="matKhau" type="password" />
+        </div>
+        <div>
+            Giới tính:
+            <input type="radio" value="Nam" name="gioitinh" />Nam
+            <input type="radio" checked value="Nữ" name="gioitinh" />Nữ
+            <input type="radio" value="Khác" name="gioitinh" />Khác
+        </div>
+        <div>
+            <input type="checkbox" name="sothich" value="Ăn">Ăn
+            <input type="checkbox" name="sothich" value="Ngủ">Ngủ
+            <input type="checkbox" name="sothich" value="Xem phim">Xem phim
+            <input type="checkbox" name="sothich" value="Đá banh">Đá banh
+        </div>
+        <div>
+            Tỉnh:
+            <select name="tinhThanh">
+                <option value="HN">Hà Nội</option>
+                <option value="HCM">Hồ Chí Minh</option>
+                <option value="LA">Long An</option>
+            </select>
+        </div>
+        <div>
+            <button>Đăng ký</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+    </form>
+</body>
+</html>
