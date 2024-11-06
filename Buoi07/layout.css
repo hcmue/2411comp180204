@@ -1,0 +1,4 @@
+.my-header{
+    height: 120px; background-color: aqua; position: relative;
+}
+.my-menu{position: absolute; left: 0; bottom: 0; width: 100%;}
