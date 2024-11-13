@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{width: 80px; height: 80px; border: 1px solid blue; text-align: center;}
+    </style>
+</head>
+<body>
+    <button id="btnShow">Show</button>
+    <button id="btnHide">Hide</button>
+    <button id="btnToggle">Toggle</button>
+    <table>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnShow").click(function(){
+                $("table").show(1500);
+            });
+            $("#btnHide").click(function () {
+                $("table").hide(1500);
+            });
+            $("#btnToggle").click(function () {
+                $("table").toggle(1500);
+            });
+            let gt = "X";
+            $("td").click(function(){
+                if($(this).html() === "") {
+                    $(this).html(gt);
+                    gt = gt === "X" ? "O" : "X";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

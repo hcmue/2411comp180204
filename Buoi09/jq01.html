@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Hello DIV1</div>
+    <div>Hello DIV2</div>
+    <div>Hello DIV3</div>
+    <div>Hello DIV4</div>
+    <div>Hello DIV5</div>
+    <div>Hello DIV6</div>
+    <div>Hello DIV7</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //gắn sự kiện click thẻ div
+            $("div").click(function(){
+                $(this).hide(1000);
+            });
+        });
+    </script>
+  </body>
+</html>
